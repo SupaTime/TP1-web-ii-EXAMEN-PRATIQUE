@@ -1,0 +1,7 @@
+header div > a {
+    font-weight: bold;
+}
+
+header a:hover {
+    color: var(--color-link-hover);
+}

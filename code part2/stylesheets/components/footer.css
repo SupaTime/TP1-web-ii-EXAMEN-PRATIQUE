@@ -1,0 +1,29 @@
+
+footer h3 {
+    font-size: 1.20rem;
+}
+
+footer .nav-item {
+    width: 11.875rem;
+}
+
+footer a {
+    color: var(--color-black);
+}
+
+footer .nav-item a {
+    color: rgba(0,0,0,.58);
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: var(--color-black);
+}
+
+#detail a {
+    text-decoration: none;
+}
+
+#detail a:hover {
+    text-decoration: underline;
+}
