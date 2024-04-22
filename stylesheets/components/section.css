@@ -1,0 +1,61 @@
+main {
+    margin-top: 2rem;
+}
+
+main > section {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2rem;
+}
+
+main > section:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+main > section .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main > section .container div {
+    padding: 32px 96px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+section p.bigger {
+    font-size: 1.5rem;
+}
+
+main > section button {
+    margin-top: 32px;
+}
+
+@media (max-width: 1024px) {
+    main > section .container div {
+        padding-inline: 1.5rem;
+    }
+
+    section p.bigger {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    main > section .container div {
+        padding-inline: 1rem;
+    }
+
+    section p.bigger {
+        font-size: 1.375rem;
+    }
+}
+
+@media (max-width: 374px) {
+    section p.bigger {
+        font-size: 1.1875rem;
+    }
+}

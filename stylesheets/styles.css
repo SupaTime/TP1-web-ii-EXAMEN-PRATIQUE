@@ -1,0 +1,63 @@
+@import url(root.css);
+
+@import url(components/header.css);
+@import url(components/section.css);
+@import url(components/footer.css);
+@import url(components/button.css);
+@import url(components/license.css);
+
+
+
+
+/* Light Green Theme */
+
+section.light-green-theme div {
+    background-color: var(--color-light-green);
+}
+
+/* Orange Theme */
+
+section.orange-theme div {
+    background-color: var(--color-orange);
+}
+
+/* Light Orange Theme */
+
+section.light-orange-theme div {
+    background-color: var(--color-light-orange);
+}
+
+/* Teel Theme */
+
+section.teel-theme div {
+    background-color: var(--color-teel);
+    color: #fff;
+}
+
+section.teel-theme button {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* Dark Teel Theme */
+
+section.dark-teel-theme div {
+    background-color: var(--color-dark-teel);
+    color: #fff;
+}
+
+section.dark-teel-theme button {
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+/* Green links */
+
+a.green-link {
+    color: var(--color-link-hover);
+
+}
+
+a.green-link:hover {
+    color: var(--color-link-hover);
+}

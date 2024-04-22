@@ -1,0 +1,127 @@
+header {
+    position: relative;
+}
+  
+header::after {
+content: "";
+position: absolute;
+bottom: -1;
+left: 0;
+width: calc(100vw - 17px);
+height: 3px;
+background: linear-gradient(to top, transparent, #cbcbcb);
+z-index: 1;
+}
+
+header nav > .container {
+    position: relative;
+    color: var(--color-text);
+    height: 6.1875rem;
+    align-items: center;
+    font-weight: 600;
+}
+
+header .logo {
+    position: absolute;
+    left: -5.6875rem;
+    width: 3.1875rem;
+    height: 3.1875rem;
+}
+
+header .nav-item {
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+.calc-padding {
+    margin-left: auto;
+}
+
+.calc-padding div#find-store {
+    margin-right: 56px;
+}
+
+header a#find-store svg {
+    padding-right: 8px;
+}
+
+header a#find-store {
+    font-size: 14px;
+}
+
+.hambergur {
+    display: none;
+}
+
+.hambergur button {
+    gap: 0;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    width: 2.75rem;
+    height: 2.75rem;
+    color: var(--color-dark-teel);
+}
+
+.hambergur svg {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+@media (max-width: 1701px) {
+    header .logo {
+        position: static;
+        margin-right: 2.5rem;
+    }
+}
+
+@media (max-width: 1520px) {
+    header nav > .container {
+        max-width: 100%;
+        padding-inline: 2.5rem;
+    }
+}
+
+@media (max-width: 1158px) {
+    header nav > .container {
+        justify-content: space-between;
+    }
+    header .nav-item {
+        display: none;
+    }
+    .hambergur {
+        display: block;
+    }
+    .calc-padding {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 1023px) {
+    header nav > .container {
+        height: 5.1875rem;
+        padding-inline: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    header nav > .container {
+        height: 4.5rem;
+        padding-inline: 1rem;
+    }
+    header .logo {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}
+
+@media (max-width: 375px) {
+    header nav > .container {
+        height: 4rem;
+    }
+    header .logo {
+        width: 2rem;
+        height: 2rem;
+    }
+}

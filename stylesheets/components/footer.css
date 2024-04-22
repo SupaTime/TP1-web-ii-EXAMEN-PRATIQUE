@@ -1,0 +1,99 @@
+footer {
+    position: relative;
+    padding-block: 1.5rem;
+    padding-inline: 1.5rem;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: 0;
+    width: calc(100vw - 17px);
+    height: 3px;
+    background: linear-gradient(to bottom, transparent, #cbcbcb);
+    z-index: 1;
+}
+
+footer .row {
+    flex-wrap: nowrap;
+}
+
+footer .nav-item {
+    width: 11.875rem;
+}
+
+footer .nav-item-md {
+    display: none;
+}
+
+footer .nav-item div div {
+    padding-block: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer .nav-item a {
+    color: rgba(0,0,0,.58);
+    font-size: 1rem;
+}
+
+footer a:hover {
+    color: var(--color-black);
+}
+
+#media.container {
+    gap: 0.25rem;
+}
+
+#media.container a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.75rem;
+    width: 2.75rem;
+}
+
+#detail {
+    margin: 24px 0px 4px 0px;
+}
+
+#detail a:hover {
+    text-decoration: underline;
+}
+
+footer div:has(a.green-link) {
+    margin: 32px 0 4px 0;
+}
+
+footer p.less-important {
+    margin-block: 16px;
+}
+
+@media (max-width: 1024px) {
+    footer .nav-item {
+        display: none;
+    }
+
+    footer .nav-item-md {
+        display: block;
+    }
+
+    footer h3 {
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+
+    footer hr {
+        margin-top: 16px;
+    }
+
+    footer #detail {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    footer span {
+        display: none;
+    }
+}
